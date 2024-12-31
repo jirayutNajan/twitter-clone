@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 
 export const protectRoute = async (req, res, next) => {
   try {
-    const token = req.cookies.jwt; // ดึง cookie จาก request
+    const token = req.cookies.jwt; // ดึง cookie จาก request //cookire parser middelware
     if(!token) { // check if user have token
       return res.status(401).json({ error: "Unauthorized: No Token Provided" });
     }
