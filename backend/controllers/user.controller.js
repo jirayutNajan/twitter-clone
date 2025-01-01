@@ -68,7 +68,12 @@ export const getSuggestedUsers = async (req, res) => {
   try {
     const userId = req.user._id;
 
-    const userFollowByMe = await User.findById(userId).select("following");// array of id
+    const userFollowByMe = await User.findById(userId).select("following");
+    // userFollowByMe จะคื่นค่าเป็น object ของ user แบบนี้ ตัดเหลือแค่ follwing กับ _id
+    // { 
+    //   "_id": "64d8c7f3b3a9a7001e3c1234",
+    //   "following": ["64d8c7f3b3a9a7001e3c5678", "64d8c7f3b3a9a7001e3c9101"]
+    // }
 
     const users = await User.aggregate([// find โดยใช้ เงื่อนไข
       {
