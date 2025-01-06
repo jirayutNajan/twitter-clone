@@ -29,7 +29,6 @@ const Posts = ({ feedType, username, userId }) => {
 					throw new Error(data.error || "Something went wrong"); //throw error to error variable
 				}
 
-				console.log(data);
 				return data;
 
 			} catch (error) {
