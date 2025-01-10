@@ -1,4 +1,4 @@
-# My Project
+# Twitter clone project
 
 This project was created by following a YouTube tutorial.  
 You can watch the tutorial here: [YouTube Tutorial](https://www.youtube.com/watch?v=MDZC8VDZnV8&t=28334s)
