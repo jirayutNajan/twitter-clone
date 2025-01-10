@@ -10,7 +10,7 @@ It serves as a learning exercise to practice and apply the techniques covered in
 
 ## Credits
 
-- Tutorial by: [YouTube Creator](https://www.youtube.com)
+- Tutorial by: [YouTube Creator](https://www.youtube.com/@asaprogrammer_)
 - Link to the video: [Watch the Tutorial](https://www.youtube.com/watch?v=MDZC8VDZnV8&t=28334s)
 
 ---
