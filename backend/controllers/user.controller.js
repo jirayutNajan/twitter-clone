@@ -138,6 +138,7 @@ export const updateUser = async (req, res) => {
       
       const uploadedResponse = await cloudinary.uploader.upload(coverImg);
       coverImg = uploadedResponse.secure_url;
+      console.log("testst", coverImg);
     }
 
     user.fullName = fullName || user.fullName; // if fullName is null then = user.fullName

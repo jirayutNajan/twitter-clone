@@ -19,9 +19,7 @@ const Posts = ({ feedType, username, userId }) => {
 				return "/api/posts/all"
 		}
 	}
-
-	console.log(feedType);
-
+	
 	const POST_ENDPOINT = getPostEndPoint();
 
 	const { data, isLoading, error, isError, refetch, isRefetching } = useQuery({
