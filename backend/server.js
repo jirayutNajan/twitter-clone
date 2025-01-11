@@ -36,6 +36,8 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/notifications", notificationRoutes);
 
+app.use("/debug", debugRoutes);
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "frontend/dist")));
 
@@ -45,7 +47,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //for debug
-app.use("/debug", debugRoutes);
 
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
